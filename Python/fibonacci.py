@@ -10,6 +10,7 @@ def closestFibonacciNumber(paramNumber):
     else:
         return [sumOfAddition - numberAdded, sumOfAddition]
 
+
 def nthFibonacciNumber(paramNumber):
     assert paramNumber >= 0
 
@@ -21,5 +22,12 @@ def nthFibonacciNumber(paramNumber):
 
     return sumOfAddition - numberAdded
 
-print([closestFibonacciNumber(1), closestFibonacciNumber(4), closestFibonacciNumber(11), closestFibonacciNumber(21)])
-print([nthFibonacciNumber(0), nthFibonacciNumber(1), nthFibonacciNumber(2), nthFibonacciNumber(7), nthFibonacciNumber(11)])
+
+print([
+    closestFibonacciNumber(1), closestFibonacciNumber(4),
+    closestFibonacciNumber(11), closestFibonacciNumber(21)
+])
+print([
+    nthFibonacciNumber(0), nthFibonacciNumber(1),
+    nthFibonacciNumber(2), nthFibonacciNumber(7), nthFibonacciNumber(11)
+])
