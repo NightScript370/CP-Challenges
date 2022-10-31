@@ -4,5 +4,7 @@ const lengthLimit = 13
 
 let largestNumYet = 0
 for (let starterNumber = 0; starterNumber < numberString.length - lengthLimit; i++) {
-    largestNumYet = Math.max(largestNumYet, numberString.substring(starterNumber, starterNumber + lengthLimit).split('').map(strNum => parseInt(strNum)).reduce((product, value) => product * value ))
+    const dealingString = numberString.substring(starterNumber, starterNumber + lengthLimit).split('')
+    if (dealingString.includes('0')) continue;
+    largestNumYet = Math.max(largestNumYet, dealingString.map(strNum => parseInt(strNum)).reduce((product, value) => product * value))
 }
